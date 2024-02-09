@@ -8,12 +8,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     /* Estilos adicionais podem ser inseridos aqui */
+    body {
+      padding-top: 56px; /* altura da barra de navegação */
+    }
+    .full-height {
+      height: 100vh;
+    }
   </style>
 </head>
 <body>
 
   <!-- Navegação -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Meu Site</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,14 +43,20 @@
 
   <!-- Header -->
   <header class="jumbotron text-center">
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Um site simples feito com Bootstrap</p>
+    <div class="container">
+      <h1>Bem-vindo ao Meu Site</h1>
+      <p>Um site simples feito com Bootstrap</p>
+    </div>
   </header>
 
   <!-- Conteúdo da seção -->
-  <section class="container">
-    <h2>Seção Principal</h2>
-    <p>Aqui está o conteúdo principal da minha página.</p>
+  <section class="container-fluid full-height bg-light">
+    <div class="row full-height align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Seção Principal</h2>
+        <p>Aqui está o conteúdo principal da minha página.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Rodapé -->
