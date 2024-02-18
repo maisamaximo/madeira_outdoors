@@ -1,78 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Página</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    /* Estilos adicionais podem ser inseridos aqui */
-    body {
-      padding-top: 56px; /* altura da barra de navegação */
-    }
-    .full-height {
-      height: 100vh;
-    }
-    .header-color {
-      background-color: #488934;
-    }
-    .footer-color {
-      background-color: #19390b;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Madeira Outdoors</title>
 
-  <!-- Navegação -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Madeira Outdoors</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
-          </li>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      n
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+
+      <div id="menu-icon">
+          <i class="ri-menu-line"></i> 
+          </div>
+            <a href="#" class="logo"><img src="assets/logo/logo-nav.png" alt="" /></a>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Information</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="h-right">
+        <a href="#">Follow us </a>
+        <a href="https://www.instagram.com/madeira_outdoors/" target="_blank"><i class="ri-instagram-fill"></i></a>
+        <a href="https://wa.me/351968656613?text=I'm%20interested%20in%20your%20services" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+      </div>
+    </header>
+
+    <!---home section design-->
+    <section class="home">
+      <div class="home-text">
+        <h5>Let's</h5>
+        <h1>
+          Planning your <br />
+          own travel
+        </h1>
+        <p>
+          Discover Madeira: A Gem of the Atlantic, Where Every Moment is an
+          Adventure.
+        </p>
+        <a href="#" class="btn">Book a trip</a>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature-content">
+        <div class="row">
+          <div class="row-img">
+            <img src="assets/img/sky.jpg" alt="" />
+          </div>
+          <h4>Flying Experiences</h4>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img src="assets/img/land.jpg" alt="" />
+          </div>
+          <h4>Land Expeditions</h4>
+        </div>
+
+        <div class="row">
+          <div class="row-img">
+            <img src="assets/img/acqua.jpg" alt="" />
+          </div>
+          <h4>Marine Adventures</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="trending" class="section__container trending__container">
+      <div class="section__header">
+        <div class="section__title">Trending 2024</div>
+        <div class="section__nav">
+          <span><i class="ri-arrow-left-s-line"></i></span>
+          <span><i class="ri-arrow-right-s-line"></i></span>
+        </div>
+      </div>
+      <div class="trending__grid">
+        <div class="trending__card">
+          <img src="assets/img/acqua.jpg" alt="trending" />
+          <h1>Mountain Hiking Tour</h1>
+          <p>Hiking Our | Stoke on Trent</p>
+          <div class="trending__details">
+            <div class="price">
+              <p>From</p>
+              <h3>365€</h3>
+              <p><span>*price varies</span></p>
+            </div>
+            <div class="trending__ratings">
+              <div>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>4.8 (10)</p>
+            </div>
+          </div>
+          <h5>
+            <span><i class="ri-time-line"></i></span> 3 days
+          </h5>
+          <p>
+            <span><i class="ri-check-line"></i></span> Free Cancellation
+          </p>
+        </div>
+
+        <div class="trending__card">
+          <img src="assets/img/sky.jpg" alt="trending" />
+          <h1>Mountain Hiking Tour</h1>
+          <p>Hiking Our | Stoke on Trent</p>
+          <div class="trending__details">
+            <div class="price">
+              <p>From</p>
+              <h3>365€</h3>
+              <p><span>*price varies</span></p>
+            </div>
+            <div class="trending__ratings">
+              <div>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>4.8 (10)</p>
+            </div>
+          </div>
+          <h5>
+            <span><i class="ri-time-line"></i></span> 3 days
+          </h5>
+          <p>
+            <span><i class="ri-check-line"></i></span> Free Cancellation
+          </p>
+        </div>
+
+        <div class="trending__card">
+          <img src="assets/img/land.jpg" alt="trending" />
+          <h1>Mountain Hiking Tour</h1>
+          <p>Hiking Our | Stoke on Trent</p>
+          <div class="trending__details">
+            <div class="price">
+              <p>From</p>
+              <h3>365€</h3>
+              <p><span>*price varies</span></p>
+            </div>
+            <div class="trending__ratings">
+              <div>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>4.8 (10)</p>
+            </div>
+          </div>
+          <h5>
+            <span><i class="ri-time-line"></i></span> 3 days
+          </h5>
+          <p>
+            <span><i class="ri-check-line"></i></span> Free Cancellation
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-section">
+        <h3>Travel</h3>
+        <p>
+          Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Minima,
+          Asperiores?
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blogs</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="jumbotron text-center header-color">
-    <div class="container">
-      <h1>Bem-vindo ao Madeira Outdoors</h1>
-      <p>Um site simples feito com Bootstrap</p>
-    </div>
-  </header>
-
-  <!-- Conteúdo da seção -->
-  <section class="container-fluid full-height bg-light">
-    <div class="row full-height align-items-center justify-content-center">
-      <div class="col-md-8 text-center">
-        <h2>Seção Principal</h2>
-        <p>Aqui está o conteúdo principal da minha página.</p>
+      <div class="footer-section">
+        <h4>Our Address</h4>
+        <p><i class="fa fa-map-marker"></i> Madeira, Portugal - 400104</p>
+        <p><i class="fa fa-phone"></i> 123-456-7890</p>
+        <p><i class="fa fa-envelope"></i> madeira_outdoors@gmail.com</p>
+        <p><i class="fa fa-clock-o"></i> 7:00am - 10:00pm</p>
       </div>
-    </div>
-  </section>
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Subscribe For Latest Updates</p>
+        <form action="#" method="post">
+          <input type="email" placeholder="enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </footer>
 
-  <!-- Rodapé -->
-  <footer class="bg-dark text-white text-center py-3 footer-color">
-    <p>&copy; 2024 Madeira Outdoors</p>
-  </footer>
-
-  <!-- Bootstrap JS e dependências -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <script src="script/script.js"></script>
+  </body>
 </html>
