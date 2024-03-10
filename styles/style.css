@@ -219,7 +219,9 @@ section {
   border-radius: 10px;
 }
 
-.holiday-text h5 {
+.holiday-text h5,
+.tour h5,
+.faq-section h5 {
   font-size: 22px;
   font-weight: 600;
   color: var(--main-color);
@@ -331,14 +333,14 @@ box img:hover {
 }
 
 .faq-section {
-  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  color: #1c1c1c;
 }
 
 .accordion-item {
   background-color: #f1f1f1;
-  border: 1px solid #ddd;
+  border: 1px solid var(--main-color);
   margin-bottom: 10px;
   border-radius: 4px;
 }
@@ -357,13 +359,13 @@ box img:hover {
 
 .accordion-button:hover,
 .accordion-button.active {
-  background-color: #ddd;
+  background-color: var(--main-color);
 }
 
 .accordion-content {
   padding: 0 20px 10px;
   display: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--text-color);
 }
 
 .accordion-content p {
@@ -371,6 +373,9 @@ box img:hover {
   line-height: 1.5;
 }
 
+.newsletter {
+  background: #36682e;
+}
 .newsletter-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -396,10 +401,13 @@ box img:hover {
 }
 .newsletter-content form input:first-child {
   padding: 15px;
-  background: #202020;
   font-size: var(--p-font);
   color: var(--text-color);
   border-radius: 5px;
+}
+
+.faq-section h5 {
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -518,8 +526,8 @@ box img:hover {
     display: block;
     color: #979797;
     padding: 0;
-    margin: 0px 0px 40px 0px;
-    font-size: 2.2rem;
+    margin: 0px 0px 20px 0px;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .navbar.open {
@@ -543,7 +551,16 @@ box img:hover {
   }
   .accordion-button {
     font-size: 14px;
-    padding: 8px 15px;
+    padding: 15px;
+    background: var(--main-color);
+  }
+
+  .home-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .tour-content {
+    margin-top: 2rem;
   }
 }
 
@@ -555,6 +572,10 @@ box img:hover {
   .home {
     height: 85vh;
   }
+
+  .logo img {
+    max-height: 70px;
+  }
 }
 @media (max-width: 450px) {
   header {
@@ -563,14 +584,11 @@ box img:hover {
   header.sticky {
     padding: 7px 3%;
   }
-  section {
-    padding: 60px 3% 35px;
-  }
   .faq-section {
     padding: 5px;
   }
   .accordion-button {
-    padding: 8px 10px;
+    padding: 15px;
   }
   .accordion-content {
     padding: 0 10px 10px;
