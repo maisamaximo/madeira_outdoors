@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Madeira Outdoors</title>
+    <title>Madeira Outdoors</title>
 
-    <link rel="stylesheet" href="styles/style.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!---boxicons link-->
     <link
       rel="stylesheet"
-      n
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
     <link
@@ -17,26 +18,35 @@
       rel="stylesheet"
     />
 
+    <!---google fonts link-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans: wght@300; 400;500; 600; 700; 800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!--header design-->
     <header>
       <a href="#" class="logo"><img src="assets/logo/logo-nav.png" alt="" /></a>
       <ul class="navbar">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Information</a></li>
         <li><a href="#">About us</a></li>
-        <li><a href="#">Culture</a></li>
+        <li><a href="#">Our Experiences</a></li>
+        <li><a href="#">FAQ</a></li>
         <li><a href="#">Contact us</a></li>
       </ul>
+
       <div class="h-right">
-        <a href="https://www.instagram.com/madeira_outdoors/" target="_blank"><i class="ri-instagram-fill"></i></a>
-        <a href="https://wa.me/351961176353?text=I'm%20interested%20in%20your%20services" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+        <a href="https://www.instagram.com/madeira_outdoors/" target="_blank"
+          ><i class="ri-instagram-fill"></i
+        ></a>
+        <a
+          href="https://wa.me/351961176353?text=I'm%20interested%20in%20your%20services"
+          target="_blank"
+          ><i class="ri-whatsapp-fill"></i
+        ></a>
         <div class="bx bx-menu" id="menu-icon"></div>
       </div>
     </header>
@@ -50,8 +60,9 @@
           own travel
         </h1>
         <p>
-          Discover Madeira: A Gem of the Atlantic, Where Every Moment is an
-          Adventure.
+          Indonesia, a Southeast Aisn nation made up of thousands of volcanic
+          <br />
+          islands, is home to hundreds of ethnic groups speaking
         </p>
         <a href="#" class="btn">Book a trip</a>
       </div>
@@ -82,146 +93,140 @@
       </div>
     </section>
 
-    <section id="trending" class="section__container trending__container">
-      <div class="section__header">
-        <div class="section__title">Trending 2024</div>
-        <div class="section__nav">
-          <span><i class="ri-arrow-left-s-line"></i></span>
-          <span><i class="ri-arrow-right-s-line"></i></span>
+    <!---holiday section design-->
+    <section class="holiday">
+      <div class="holiday-img">
+        <img src="assets/img/acqua.jpg" />
+      </div>
+      <div class="holiday-text">
+        <h5>east nusa tengga</h5>
+        <h2>Have you enjoyed your holiday</h2>
+        <p>
+          You will be amazed if you take part in this sailing Komodo island tour
+          package. So it is also mandatory for you, besides enjoying Komodo
+          tourism on Komodo Island, you also have to taste the marine tourism.
+          The beautiful waters of Komodo will make you meet many travelers from
+          other countries.
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </section>
+
+    <!---tour section design-->
+    <section class="tour">
+      <div class="center-text">
+        <h2>Popular Tours</h2>
+      </div>
+      <div class="tour-content">
+        <div class="box">
+          <img src="assets/img/land.jpg" />
+          <h6>East java</h6>
+          <h4>Mount Bromo</h4>
+        </div>
+        <div class="box">
+          <img src="assets/img/land.jpg" />
+          <h6>East java</h6>
+          <h4>Mount Bromo</h4>
+        </div>
+        <div class="box">
+          <img src="assets/img/land.jpg" />
+          <h6>East java</h6>
+          <h4>Mount Bromo</h4>
         </div>
       </div>
-      <div class="trending__grid">
-        <div class="trending__card">
-          <img src="assets/img/acqua.jpg" alt="trending" />
-          <h1>Mountain Hiking Tour</h1>
-          <p>Hiking Our | Stoke on Trent</p>
-          <div class="trending__details">
-            <div class="price">
-              <p>From</p>
-              <h3>365€</h3>
-              <p><span>*price varies</span></p>
-            </div>
-            <div class="trending__ratings">
-              <div>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-half-fill"></i></span>
-                <span><i class="ri-star-line"></i></span>
-              </div>
-              <p>4.8 (10)</p>
-            </div>
-          </div>
-          <h5>
-            <span><i class="ri-time-line"></i></span> 3 days
-          </h5>
-          <p>
-            <span><i class="ri-check-line"></i></span> Free Cancellation
-          </p>
-        </div>
+      <div class="center-btn">
+        <a href="#" class="btn">See Tour</a>
+      </div>
+    </section>
 
-        <div class="trending__card">
-          <img src="assets/img/sky.jpg" alt="trending" />
-          <h1>Mountain Hiking Tour</h1>
-          <p>Hiking Our | Stoke on Trent</p>
-          <div class="trending__details">
-            <div class="price">
-              <p>From</p>
-              <h3>365€</h3>
-              <p><span>*price varies</span></p>
-            </div>
-            <div class="trending__ratings">
-              <div>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-half-fill"></i></span>
-                <span><i class="ri-star-line"></i></span>
-              </div>
-              <p>4.8 (10)</p>
-            </div>
-          </div>
-          <h5>
-            <span><i class="ri-time-line"></i></span> 3 days
-          </h5>
-          <p>
-            <span><i class="ri-check-line"></i></span> Free Cancellation
-          </p>
-        </div>
+    <!---culture section design-->
+    <section class="culture">
+      <div class="culture-text">
+        <h5>INDONESIAN CULTURE</h5>
+        <h2>Our culture here is very friendly to people</h2>
+        <p>
+          known for his politeness, manners and gentleness. This becomes a
+          characteristic when they mingle with other tribes and become basic
+          traits that are passed down by their ancestors.
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+      <div class="culture-img">
+        <img src="assets/img/acqua.jpg" />
+      </div>
+    </section>
 
-        <div class="trending__card">
-          <img src="assets/img/land.jpg" alt="trending" />
-          <h1>Mountain Hiking Tour</h1>
-          <p>Hiking Our | Stoke on Trent</p>
-          <div class="trending__details">
-            <div class="price">
-              <p>From</p>
-              <h3>365€</h3>
-              <p><span>*price varies</span></p>
-            </div>
-            <div class="trending__ratings">
-              <div>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-half-fill"></i></span>
-                <span><i class="ri-star-line"></i></span>
-              </div>
-              <p>4.8 (10)</p>
+    <section class="faq">
+      <div class="faq-section">
+        <h2>FAQs</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-button" type="button">Pergunta 1</button>
+            <div class="accordion-content">
+              <p>Resposta para a pergunta 1.</p>
             </div>
           </div>
-          <h5>
-            <span><i class="ri-time-line"></i></span> 3 days
-          </h5>
-          <p>
-            <span><i class="ri-check-line"></i></span> Free Cancellation
-          </p>
+          <div class="accordion-item">
+            <button class="accordion-button" type="button">Pergunta 2</button>
+            <div class="accordion-content">
+              <p>Resposta para a pergunta 2.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- <footer class="footer">
-      <div class="footer-section">
-        <h3>Travel</h3>
-        <p>
-          Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Minima,
-          Asperiores?
-        </p>
-        <div class="social-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
+    <!---newsletter section design-->
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <h2>Ready to explore?</h2>
+          <p>Let's go on vacation, make your day</p>
         </div>
-      </div>
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Destination</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blogs</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Our Address</h4>
-        <p><i class="fa fa-map-marker"></i> Madeira, Portugal - 400104</p>
-        <p><i class="fa fa-phone"></i> 123-456-7890</p>
-        <p><i class="fa fa-envelope"></i> madeira_outdoors@gmail.com</p>
-        <p><i class="fa fa-clock-o"></i> 7:00am - 10:00pm</p>
-      </div>
-      <div class="footer-section">
-        <h4>Newsletter</h4>
-        <p>Subscribe For Latest Updates</p>
-        <form action="#" method="post">
-          <input type="email" placeholder="enter your email" />
-          <button type="submit">Subscribe</button>
+        <form action="">
+          <input type="email" placeholder="Enter your email..." required />
+          <input type="submit" value="Get started" class="btn" />
         </form>
       </div>
-    </footer> -->
+    </section>
 
-    <script src="script/script.js"></script>
+    <!---footer section design-->
+    <section class="footer">
+      <div class="footer-box">
+        <h3>Services</h3>
+        <a href="#">Email Marketing</a>
+        <a href="#">Campaigns</a>
+        <a href="#">Brandings</a>
+        <a href="#">Offline</a>
+      </div>
+      <div class="footer-box">
+        <h3>About</h3>
+        <a href="#">Our story</a>
+        <a href="#">Benefits</a>
+        <a href="#">Team</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-box">
+        <h3>Help</h3>
+        <a href="#">FAQs</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Social</h3>
+        <div class="social">
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--- copyright-->
+    <div class="copyright">
+      <p>Copyright 2024 By Maisa Maximo</p>
+    </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
